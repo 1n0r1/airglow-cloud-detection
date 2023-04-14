@@ -61,7 +61,7 @@ model.compile(optimizer='adam',
 model.summary()
 
 
-checkpoint_path = "training_checkpoints/cp-{epoch:04d}.tf"
+checkpoint_path = "training_checkpoints/cp-{epoch:04d}"
 
 # Checkpoint callback
 mc = tf.keras.callbacks.ModelCheckpoint(
@@ -73,7 +73,7 @@ mc = tf.keras.callbacks.ModelCheckpoint(
 cl = tf.keras.callbacks.CSVLogger('history.csv')
 
 # Load checkpoint if want to continue from checkpoints
-# model = tf.keras.models.load_model("old_checkpoints1/cp-0020.tf")
+# model = tf.keras.models.load_model("old_checkpoints1/cp-0020")
 
 epochs=20
 history = model.fit(
