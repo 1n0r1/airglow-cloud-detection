@@ -1,0 +1,8 @@
+data
+labeled_sets
+labeled_splits
+wrong
+*checkpoints*
+cmd-list.sh
+is_cloudy*
+trainned_model
